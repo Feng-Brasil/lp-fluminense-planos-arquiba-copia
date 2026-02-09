@@ -36,6 +36,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Nova Seção: Adicionar Convidado */}
+      <section className="bg-[#1e1e1e] border-y border-[#393939] overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch">
+          {/* Lado Esquerdo: Conteúdo */}
+          <div className="flex-1 p-8 md:p-16 flex flex-col justify-center">
+            <h2 className="text-3xl md:text-5xl font-black uppercase italic mb-6 text-[#ffffff] leading-tight">
+              Leve mais uma pessoa para todos os jogos
+            </h2>
+            <div className="space-y-4 text-gray-300 text-lg leading-relaxed mb-8">
+              <p>
+                Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: <span className="text-[#ffffff] font-bold">50% de desconto garantido</span> e a <span className="text-[#ffffff] font-bold">mesma prioridade de compra do titular</span>. Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
+              </p>
+              <p>
+                <span className="text-[#ffffff] font-bold uppercase block mb-1">Como usar na prática:</span>
+                Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas que podem ser cadastradas depende do seu plano, assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
+              </p>
+              <p className="text-xl font-bold text-[#ffffff]">
+                Preço: R$ 25 por mês por convidado contratado.
+              </p>
+              <p className="italic">
+                Simples, acessível e pensado para você nunca precisar ir sozinho ao Maracanã.
+              </p>
+            </div>
+            <a 
+              href="#" 
+              className="inline-block border-2 border-[#ffffff] text-[#ffffff] px-8 py-4 rounded-md font-black uppercase text-center hover:bg-[#ffffff] hover:text-[#171717] transition-all self-start"
+            >
+              Quero adicionar um convidado
+            </a>
+          </div>
+          {/* Lado Direito: Imagem */}
+          <div className="flex-1 relative min-h-[400px]">
+            <img 
+              src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&q=80&w=1200" 
+              alt="Sócio e convidado entrando juntos no Maracanã" 
+              className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1e1e1e] via-transparent to-transparent md:block hidden"></div>
+          </div>
+        </div>
+      </section>
+
       {/* Planos Arquiba */}
       <section id="planos" className="py-20 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
